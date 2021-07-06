@@ -1,0 +1,22 @@
+/*resetando tudo*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/*resetando o link*/
+
+a {
+    text-decoration: none;
+}
+
+
+/*dando uma cor a body*/
+
+body {
+    background: white;
+}
