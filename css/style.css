@@ -1,0 +1,59 @@
+header {
+    background: blue;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+img {
+    width: 30px;
+}
+
+.nav-left #logo img {
+    width: 100px;
+}
+
+#searchpesq,
+#logo {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#searchpesq img {
+    width: 15px;
+}
+
+#searchpesq input {
+    height: 25px;
+}
+
+.nav-right ul {
+    list-style: none;
+}
+
+.nav-right ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.nav-right ul li a {
+    color: beige;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:630px) {
+    header {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav-right ul li {
+        display: block;
+    }
+}
