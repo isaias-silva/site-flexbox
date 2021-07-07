@@ -1,183 +1,207 @@
-                header {
-                    background: blue;
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    overflow: hidden;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    position: fixed;
-                    z-index: 10000;
-                    top: 0;
-                }
-                
-                aside {
-                    position: fixed;
-                    top: 120px;
-                    border-style: hidden solid hidden hidden;
-                    width: 200px;
-                    height: 100%;
-                    overflow-y: scroll;
-                }
-                
-                aside a {
-                    display: block;
-                    margin-top: 20px;
-                }
-                
-                img {
-                    width: 30px;
-                }
-                
-                .nav-left #logo img {
-                    width: 100px;
-                }
-                
-                #searchpesq,
-                #logo {
-                    display: inline-block;
-                    margin-left: 10px;
-                    margin-bottom: 20px;
-                    transition: 0.25s ease-in-out;
-                }
-                
-                #logo {
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                }
-                
-                #searchpesq img {
-                    width: 15px;
-                }
-                
-                #searchpesq input {
-                    height: 30px;
-                    width: 100px;
-                    transition: 0.25s ease-in-out;
-                }
-                
-                #searchpesq input:focus {
-                    width: 200px;
-                }
-                
-                .nav-right #menu-center ul {
-                    list-style: none;
-                }
-                
-                .nav-right #menu-center ul li {
-                    display: inline-block;
-                    margin-right: 10px;
-                    margin-bottom: 30px;
-                    margin-top: 40px;
-                }
-                
-                .nav-right #menu-center ul li a {
-                    color: beige;
-                    padding: 15px;
-                    border-radius: 30px;
-                    transition: 0.25s ease-in-out;
-                    font-weight: bold;
-                }
-                
-                .nav-right #menu-center ul li a:hover {
-                    color: beige;
-                    padding: 15px;
-                    border-radius: 30px;
-                    background: rgb(9, 9, 60);
-                }
-                
-                .nav-right #menu-mobile {
-                    display: none;
-                }
-                
-                .nav-right #menu-mobile input {
-                    opacity: 0;
-                }
-                
-                .nav-right #menu-mobile label {
-                    cursor: pointer;
-                    position: relative;
-                    top: 10px;
-                }
-                
-                .nav-right #menu-mobile label span {
-                    display: block;
-                    height: 5px;
-                    width: 30px;
-                    background: rgb(1, 24, 68);
-                    border-radius: 30px;
-                    transition: 0.25s ease-in-out;
-                    position: relative;
-                }
-                
-                #redes-sociais {
-                    border: 1px solid blue;
-                    border-style: hidden hidden solid hidden;
-                    padding-bottom: 10px;
-                }
-                
-                aside::-webkit-scrollbar {
-                    display: none;
-                }
-                
-                .nav-right #menu-mobile label span:nth-child(1) {
-                    top: 0px
-                }
-                
-                .nav-right #menu-mobile label span:nth-child(2) {
-                    top: 4px
-                }
-                
-                .nav-right #menu-mobile label span:nth-child(3) {
-                    top: 8px
-                }
-                
-                .nav-right #menu-mobile input:checked~label span:nth-child(1) {
-                    transform: rotate(45deg);
-                    top: 20px;
-                }
-                
-                .nav-right #menu-mobile input:checked~label span:nth-child(2) {
-                    opacity: 0;
-                }
-                
-                .nav-right #menu-mobile input:checked~label span:nth-child(3) {
-                    transform: rotate(-45deg);
-                    top: 10px;
-                }
-                
-                @media screen and (max-width:690px) {
                     header {
-                        justify-content: center;
-                        flex-direction: column;
-                        position: relative;
+                        background: blue;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        overflow: hidden;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        position: fixed;
+                        z-index: 10000;
+                        top: 0;
                     }
-                    .nav-right #menu-center {
+                    
+                    aside {
+                        position: fixed;
+                        top: 120px;
+                        border: 2px solid blue;
+                        border-style: hidden solid hidden hidden;
+                        width: 200px;
+                        height: 100%;
+                        overflow-y: scroll;
+                    }
+                    
+                    aside a {
+                        display: block;
+                        margin-top: 20px;
+                    }
+                    
+                    img {
+                        width: 30px;
+                    }
+                    
+                    .nav-left #logo img {
+                        width: 100px;
+                    }
+                    
+                    #searchpesq,
+                    #logo {
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-bottom: 20px;
+                        transition: 0.25s ease-in-out;
+                    }
+                    
+                    #logo {
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                    }
+                    
+                    #searchpesq img {
+                        width: 15px;
+                    }
+                    
+                    #searchpesq input {
+                        height: 30px;
+                        width: 100px;
+                        transition: 0.25s ease-in-out;
+                    }
+                    
+                    #searchpesq input:focus {
+                        width: 200px;
+                    }
+                    
+                    .nav-right #menu-center ul {
+                        list-style: none;
+                    }
+                    
+                    .nav-right #menu-center ul li {
+                        display: inline-block;
+                        margin-right: 10px;
+                        margin-bottom: 30px;
+                        margin-top: 40px;
+                    }
+                    
+                    .nav-right #menu-center ul li a {
+                        color: beige;
+                        padding: 15px;
+                        border-radius: 30px;
+                        transition: 0.25s ease-in-out;
+                        font-weight: bold;
+                    }
+                    
+                    .nav-right #menu-center ul li a:hover {
+                        color: beige;
+                        padding: 15px;
+                        border-radius: 30px;
+                        background: rgb(9, 9, 60);
+                    }
+                    
+                    .nav-right #menu-mobile {
                         display: none;
                     }
-                    #menu-center.ativado {
-                        display: inline;
+                    
+                    .nav-right #menu-mobile input {
+                        opacity: 0;
                     }
-                    #menu-center.ativado ul li {
-                        display: block;
-                    }
-                    aside {
-                        width: 100%;
+                    
+                    .nav-right #menu-mobile label {
+                        cursor: pointer;
                         position: relative;
-                        text-align: center;
-                        top: 0px;
-                        border-style: hidden;
+                        top: 10px;
                     }
-                    .nav-right #menu-mobile {
+                    
+                    .nav-right #menu-mobile label span {
                         display: block;
-                        position: absolute;
-                        top: 100px;
-                        left: 150px;
+                        height: 5px;
                         width: 30px;
-                        height: 1px;
+                        background: rgb(1, 24, 68);
+                        border-radius: 30px;
+                        transition: 0.25s ease-in-out;
+                        position: relative;
                     }
-                    #searchpesq {
-                        margin-bottom: 70px;
+                    
+                    #redes-sociais {
+                        border: 1px solid blue;
+                        border-style: hidden hidden solid hidden;
+                        padding-bottom: 10px;
                     }
-                }
+                    
+                    #redes-sociais a {
+                        width: 80%;
+                        padding: 8px;
+                        border-radius: 30px;
+                        transition: 0.25s ease-in-out;
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: blue;
+                    }
+                    
+                    #redes-sociais a:hover {
+                        background: rgb(64, 64, 213);
+                        color: white;
+                    }
+                    
+                    #redes-sociais a:hover img {
+                        filter: invert(100%);
+                    }
+                    
+                    aside::-webkit-scrollbar {
+                        display: none;
+                    }
+                    
+                    .nav-right #menu-mobile label span:nth-child(1) {
+                        top: 0px
+                    }
+                    
+                    .nav-right #menu-mobile label span:nth-child(2) {
+                        top: 4px
+                    }
+                    
+                    .nav-right #menu-mobile label span:nth-child(3) {
+                        top: 8px
+                    }
+                    
+                    .nav-right #menu-mobile input:checked~label span:nth-child(1) {
+                        transform: rotate(45deg);
+                        top: 20px;
+                    }
+                    
+                    .nav-right #menu-mobile input:checked~label span:nth-child(2) {
+                        opacity: 0;
+                    }
+                    
+                    .nav-right #menu-mobile input:checked~label span:nth-child(3) {
+                        transform: rotate(-45deg);
+                        top: 10px;
+                    }
+                    
+                    @media screen and (max-width:690px) {
+                        header {
+                            justify-content: center;
+                            flex-direction: column;
+                            position: relative;
+                        }
+                        .nav-right #menu-center {
+                            display: none;
+                        }
+                        #menu-center.ativado {
+                            display: inline;
+                        }
+                        #menu-center.ativado ul li {
+                            display: block;
+                        }
+                        aside {
+                            width: 100%;
+                            position: relative;
+                            text-align: center;
+                            top: 0px;
+                            border-style: hidden;
+                        }
+                        .nav-right #menu-mobile {
+                            display: block;
+                            position: absolute;
+                            top: 100px;
+                            left: 150px;
+                            width: 30px;
+                            height: 1px;
+                        }
+                        #searchpesq {
+                            margin-bottom: 70px;
+                        }
+                        #redes-sociais a {
+                            margin: auto;
+                            width: 50%;
+                        }
+                    }
