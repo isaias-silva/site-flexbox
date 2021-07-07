@@ -6,6 +6,23 @@ header {
     overflow: hidden;
     flex-wrap: wrap;
     align-items: center;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+}
+
+aside {
+    position: fixed;
+    top: 120px;
+    border-style: hidden solid hidden hidden;
+    width: 200px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+aside a {
+    display: block;
+    margin-top: 20px;
 }
 
 img {
@@ -31,29 +48,83 @@ img {
     height: 25px;
 }
 
-.nav-right ul {
+.nav-right #menu-center ul {
     list-style: none;
 }
 
-.nav-right ul li {
+.nav-right #menu-center ul li {
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 30px;
     margin-top: 40px;
 }
 
-.nav-right ul li a {
+.nav-right #menu-center ul li a {
     color: beige;
     padding: 15px;
     border-radius: 30px;
 }
 
-@media screen and (max-width:630px) {
+.nav-right #menu-mobile input {
+    opacity: 0;
+    width: 30px;
+}
+
+.nav-right #menu-mobile label {
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-right #menu-mobile label span {
+    display: block;
+    height: 5px;
+    width: 30px;
+    background: rgb(1, 24, 68);
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+    position: relative;
+}
+
+.nav-right #menu-mobile label span:nth-child(1) {
+    top: 0px
+}
+
+.nav-right #menu-mobile label span:nth-child(2) {
+    top: 4px
+}
+
+.nav-right #menu-mobile label span:nth-child(3) {
+    top: 8px
+}
+
+.nav-right #menu-mobile input:checked~label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 20px;
+}
+
+.nav-right #menu-mobile input:checked~label span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-right #menu-mobile input:checked~label span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+@media screen and (max-width:690px) {
     header {
         justify-content: center;
         flex-direction: column;
+        position: relative;
     }
-    .nav-right ul li {
+    .nav-right #menu-center ul li {
         display: block;
+    }
+    aside {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        top: 0px;
+        border-style: hidden;
     }
 }
