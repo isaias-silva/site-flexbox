@@ -1,10 +1,10 @@
     body {
-        background: rgb(144, 144, 250);
+        background: rgb(117, 207, 255);
         ;
     }
     
     header {
-        background: blue;
+        background: rgb(0, 60, 255);
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -24,7 +24,7 @@
         width: 200px;
         height: 100%;
         overflow-y: scroll;
-        background: white;
+        background: rgb(226, 226, 253);
     }
     
     aside a {
@@ -190,14 +190,14 @@
         margin-top: 70px;
         width: 80%;
         height: auto;
-        background: rgb(144, 144, 250);
+        background: rgb(117, 207, 255);
         padding-top: 10px;
     }
     
     .post {
         width: 90%;
         margin: auto;
-        background: rgb(104, 104, 245);
+        background: rgb(85, 117, 135);
         text-align: center;
         border-radius: 30px;
         margin-top: 40px;
@@ -212,13 +212,39 @@
     }
     
     img.principal {
-        width: 90%;
+        width: 100%;
     }
     
     img.secundaria {
-        width: 30%;
+        width: 100%;
+    }
+    
+    .img-box-princi {
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        border: 1px solid black;
+        background: rgb(208, 231, 233);
+        margin-bottom: 10px;
+    }
+    
+    .img-box-princi p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 4px;
+    }
+    
+    .img-box-secon {
+        width: 40%;
+        margin: 5px;
+        border: 1px solid black;
+        background: rgb(208, 231, 233);
         float: left;
-        padding: 10px;
+    }
+    
+    .img-box-secon p {
+        text-align: left;
     }
     
     @media screen and (max-width: 822px) {
