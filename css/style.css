@@ -1,294 +1,365 @@
-    body {
-        background: rgb(117, 207, 255);
-        ;
-    }
-    
-    header {
-        background: rgb(0, 60, 255);
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        overflow: hidden;
-        flex-wrap: wrap;
-        align-items: center;
-        position: fixed;
-        z-index: 10000;
-        top: 0;
-    }
-    
-    aside {
-        position: fixed;
-        top: 110px;
-        border: 2px solid blue;
-        border-style: hidden solid hidden hidden;
-        width: 200px;
-        height: 100%;
-        overflow-y: scroll;
-        background: rgb(226, 226, 253);
-    }
-    
-    aside a {
-        display: block;
-        margin-top: 20px;
-    }
-    
-    img {
-        width: 30px;
-    }
-    
-    .nav-left #logo img {
-        width: 100px;
-    }
-    
-    #searchpesq,
-    #logo {
-        display: inline-block;
-        margin-left: 10px;
-        margin-bottom: 20px;
-        transition: 0.25s ease-in-out;
-    }
-    
-    #logo {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    
-    #searchpesq img {
-        width: 20px;
-    }
-    
-    #searchpesq input {
-        height: 30px;
-        width: 100px;
-        transition: 0.25s ease-in-out;
-        font-size: 20px;
-    }
-    
-    #searchpesq input:focus {
-        width: 250px;
-    }
-    
-    .nav-right #menu-center ul {
-        list-style: none;
-    }
-    
-    .nav-right #menu-center ul li {
-        display: inline-block;
-        margin-right: 10px;
-        margin-bottom: 30px;
-        margin-top: 40px;
-    }
-    
-    .nav-right #menu-center ul li a {
-        color: beige;
-        padding: 15px;
-        border-radius: 30px;
-        transition: 0.25s ease-in-out;
-        font-weight: bold;
-    }
-    
-    .nav-right #menu-center ul li a:hover {
-        color: beige;
-        padding: 15px;
-        border-radius: 30px;
-        background: rgb(9, 9, 60);
-    }
-    
-    .nav-right #menu-mobile {
-        display: none;
-    }
-    
-    .nav-right #menu-mobile input {
-        opacity: 0;
-    }
-    
-    .nav-right #menu-mobile label {
-        cursor: pointer;
-        position: relative;
-        top: 10px;
-    }
-    
-    .nav-right #menu-mobile label span {
-        display: block;
-        height: 5px;
-        width: 30px;
-        background: rgb(1, 24, 68);
-        border-radius: 30px;
-        transition: 0.25s ease-in-out;
-        position: relative;
-    }
-    
-    #redes-sociais {
-        border: 1px solid blue;
-        border-style: hidden hidden solid hidden;
-        padding-bottom: 10px;
-    }
-    
-    #redes-sociais a {
-        width: 80%;
-        padding: 8px;
-        border-radius: 30px;
-        transition: 0.25s ease-in-out;
-        font-weight: bold;
-        font-size: 15px;
-        color: blue;
-    }
-    
-    #redes-sociais a:hover {
-        background: rgb(64, 64, 213);
-        color: white;
-    }
-    
-    #redes-sociais a:hover img {
-        filter: invert(100%);
-    }
-    
-    aside::-webkit-scrollbar {
-        display: none;
-    }
-    
-    .nav-right #menu-mobile label span:nth-child(1) {
-        top: 0px
-    }
-    
-    .nav-right #menu-mobile label span:nth-child(2) {
-        top: 4px
-    }
-    
-    .nav-right #menu-mobile label span:nth-child(3) {
-        top: 8px
-    }
-    
-    .nav-right #menu-mobile input:checked~label span:nth-child(1) {
-        transform: rotate(45deg);
-        top: 20px;
-    }
-    
-    .nav-right #menu-mobile input:checked~label span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .nav-right #menu-mobile input:checked~label span:nth-child(3) {
-        transform: rotate(-45deg);
-        top: 10px;
-    }
-    
-    #cronology ul {
-        list-style: circle;
-        margin-left: 20px;
-        border: 1px solid blue;
-        border-style: hidden hidden solid hidden;
-    }
-    
-    #cronology ul li a {
-        color: rgb(0, 95, 95);
-    }
-    
-    #postagens {
-        float: right;
-        margin-top: 70px;
-        width: 80%;
-        height: auto;
-        background: rgb(117, 207, 255);
-        padding-top: 10px;
-    }
-    
-    .post {
-        width: 90%;
-        margin: auto;
-        background: rgb(85, 117, 135);
-        text-align: center;
-        border-radius: 30px;
-        margin-top: 40px;
-        box-shadow: 3px 3px 3px black;
-        padding: 20px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .post p {
-        text-align: justify;
-    }
-    
-    img.principal {
-        width: 100%;
-    }
-    
-    img.secundaria {
-        width: 100%;
-    }
-    
-    .img-box-princi {
-        width: 90%;
-        margin: auto;
-        margin-top: 40px;
-        border: 1px solid black;
-        background: rgb(208, 231, 233);
-        margin-bottom: 10px;
-    }
-    
-    .img-box-princi p {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        margin-left: 5px;
-        margin-right: 4px;
-    }
-    
-    .img-box-secon {
-        width: 40%;
-        margin: 5px;
-        border: 1px solid black;
-        background: rgb(208, 231, 233);
-        float: left;
-    }
-    
-    .img-box-secon p {
-        text-align: left;
-    }
-    
-    @media screen and (max-width: 822px) {
-        header {
-            justify-content: center;
-            flex-direction: column;
-            position: relative;
-        }
-        .nav-right #menu-center {
-            display: none;
-        }
-        #menu-center.ativado {
-            display: inline;
-        }
-        #menu-center.ativado ul li {
-            display: block;
-        }
-        aside {
-            width: 100%;
-            position: relative;
-            text-align: center;
-            top: 0px;
-            border-style: hidden;
-        }
-        .nav-right #menu-mobile {
-            display: block;
-            position: absolute;
-            top: 100px;
-            left: 150px;
-            width: 30px;
-            height: 1px;
-        }
-        #searchpesq {
-            margin-bottom: 70px;
-        }
-        #redes-sociais a {
-            margin: auto;
-            width: 50%;
-        }
-        #cronology {
-            margin-left: auto;
-            text-align: left;
-        }
-        #postagens {
-            width: 100%;
-        }
-    }
+  /*body*/
+  
+  body {
+      background: rgb(117, 207, 255);
+      background-image: url("../icons/background.jpg");
+      background-size: cover;
+      /*cobrir toda a tela*/
+  }
+  /*header*/
+  
+  header {
+      background: rgb(0, 60, 255);
+      display: flex;
+      /*flexivel*/
+      justify-content: space-between;
+      /*espaçameto igual entre os itens*/
+      width: 100%;
+      /*largura da tela*/
+      overflow: hidden;
+      /*esconder oque sair da tela*/
+      flex-wrap: wrap;
+      /*quebrar quando a largura for muito pequena*/
+      align-items: center;
+      /*itens alinham ao centro(mobile)*/
+      position: fixed;
+      /*posição fixa ao rolar pagina*/
+      z-index: 10000;
+      /*impedir que outros elementos fiquem "por cima*/
+      top: 0;
+      /*topo da pagina*/
+      border: 1px solid blueviolet;
+      /*borda*/
+      border-style: hidden hidden solid hidden;
+      /*apenas a borda de baixo*/
+  }
+  /*nav dentro do header*/
+  
+  .nav-left #logo img {
+      width: 100px;
+      /*largura da imagem*/
+  }
+  /*elementos dentro do nav-left*/
+  
+  #searchpesq,
+  #logo {
+      display: inline-block;
+      /*um elemento do lado do outro*/
+      margin-left: 10px;
+      /*espaçamento da esquerda*/
+      margin-bottom: 20px;
+      /*espaçamento de baixo*/
+      transition: 0.25s ease-in-out;
+      /*animação*/
+  }
+  
+  #logo {
+      /*logo no topo*/
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+  
+  #searchpesq img {
+      /*largura do icone de pesquisa*/
+      width: 20px;
+  }
+  /*input de pesquisa*/
+  
+  #searchpesq input {
+      height: 30px;
+      width: 100px;
+      transition: 0.25s ease-in-out;
+      font-size: 20px;
+  }
+  /*quando o input de pesquisa ficar em foco*/
+  
+  #searchpesq input:focus {
+      width: 250px;
+  }
+  /*nav-right do header*/
+  
+  .nav-right #menu-center ul {
+      list-style: none;
+      /*sem list style*/
+  }
+  
+  .nav-right #menu-center ul li {
+      display: inline-block;
+      /*li um do lado do outro*/
+      margin-right: 10px;
+      /*espaçamento*/
+      margin-bottom: 30px;
+      /*espaçamento*/
+      margin-top: 40px;
+  }
+  /*link dentro da li*/
+  
+  .nav-right #menu-center ul li a {
+      color: beige;
+      padding: 15px;
+      /*espaçamento interno*/
+      border-radius: 30px;
+      /*arredondando a border*/
+      transition: 0.25s ease-in-out;
+      /*animação*/
+      font-weight: bold;
+      /*negrito*/
+  }
+  /*ao passar o mouse nos links da li*/
+  
+  .nav-right #menu-center ul li a:hover {
+      color: beige;
+      padding: 15px;
+      border-radius: 30px;
+      background: rgb(9, 9, 60);
+  }
+  /*menu mobile*/
+  
+  .nav-right #menu-mobile {
+      display: none;
+      /*a principio não aparecerá*/
+  }
+  /*check-box invisivel*/
+  
+  .nav-right #menu-mobile input {
+      opacity: 0;
+  }
+  /*label que tera os spans*/
+  
+  .nav-right #menu-mobile label {
+      cursor: pointer;
+      /*cursor vira maozinha*/
+      position: relative;
+      top: 10px;
+  }
+  /*span dentro do label*/
+  
+  .nav-right #menu-mobile label span {
+      display: block;
+      /*em forma de coluna*/
+      height: 5px;
+      width: 30px;
+      background: rgb(1, 24, 68);
+      border-radius: 30px;
+      transition: 0.25s ease-in-out;
+      position: relative;
+  }
+  /*primeiro span*/
+  
+  .nav-right #menu-mobile label span:nth-child(1) {
+      top: 0px
+  }
+  /*segundo span*/
+  
+  .nav-right #menu-mobile label span:nth-child(2) {
+      top: 4px
+  }
+  /* terceiro span*/
+  
+  .nav-right #menu-mobile label span:nth-child(3) {
+      top: 8px
+  }
+  /*ao marcar o check box o os spans se inclinam formando um X*/
+  
+  .nav-right #menu-mobile input:checked~label span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 20px;
+  }
+  
+  .nav-right #menu-mobile input:checked~label span:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .nav-right #menu-mobile input:checked~label span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 10px;
+  }
+  /*ASIDE*/
+  
+  aside {
+      position: fixed;
+      /*POSIÇÃO Fixa*/
+      top: 110px;
+      /*abaixo do header*/
+      border: 2px solid blue;
+      border-style: hidden solid hidden hidden;
+      width: 200px;
+      height: 100%;
+      overflow-y: scroll;
+      /*rolagem*/
+      background: rgb(117, 207, 255);
+      background: linear-gradient(to bottom, white, aqua);
+      /*gradiente*/
+  }
+  
+  aside a {
+      /*todos os links do aside*/
+      display: block;
+      margin-top: 20px;
+  }
+  /*imagens da div redes sociais de imagens*/
+  
+  #redes-sociais img {
+      width: 30px;
+  }
+  /*div redes sociais*/
+  
+  #redes-sociais {
+      border: 1px solid blue;
+      border-style: hidden hidden solid hidden;
+      padding-bottom: 10px;
+  }
+  
+  #redes-sociais a {
+      width: 80%;
+      padding: 8px;
+      border-radius: 30px;
+      transition: 0.25s ease-in-out;
+      font-weight: bold;
+      font-size: 15px;
+      color: black;
+  }
+  
+  #redes-sociais a:hover {
+      background: rgb(64, 64, 213);
+      color: white;
+  }
+  
+  #redes-sociais a:hover img {
+      filter: invert(100%);
+  }
+  
+  aside::-webkit-scrollbar {
+      display: none;
+      /* sumindo com a barra lateral*/
+  }
+  /*lista da linha do tempo será integrado com back end*/
+  
+  #cronology ul {
+      list-style: circle;
+      margin-left: 20px;
+      border: 1px solid blue;
+      border-style: hidden hidden solid hidden;
+  }
+  
+  #cronology ul li a {
+      color: rgb(0, 95, 95);
+  }
+  /* seção postagens onde os posts ficarão*/
+  
+  #postagens {
+      float: right;
+      margin-top: 70px;
+      width: 80%;
+      height: auto;
+      padding-top: 10px;
+  }
+  /*posts*/
+  
+  .post {
+      width: 90%;
+      margin: auto;
+      background: rgb(85, 117, 135);
+      text-align: center;
+      border-radius: 30px;
+      margin-top: 40px;
+      box-shadow: 3px 3px 3px black;
+      padding: 20px;
+      height: auto;
+      overflow: hidden;
+  }
+  /*paragrafos do post*/
+  
+  .post p {
+      text-align: justify;
+  }
+  /*imagem principal do post*/
+  
+  img.principal {
+      width: 100%;
+  }
+  /*imagem secundaria do post*/
+  
+  img.secundaria {
+      width: 100%;
+  }
+  /*box da imagem principal*/
+  
+  .img-box-princi {
+      width: 90%;
+      margin: auto;
+      margin-top: 40px;
+      border: 1px solid black;
+      background: rgb(208, 231, 233);
+      margin-bottom: 10px;
+  }
+  /*legenda que estara no box da imagem principal*/
+  
+  .img-box-princi p {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 5px;
+      margin-right: 4px;
+  }
+  /*box da imagem secundaria*/
+  
+  .img-box-secon {
+      width: 40%;
+      margin: 5px;
+      border: 1px solid black;
+      background: rgb(208, 231, 233);
+      float: left;
+  }
+  /*legenda que estará no box da imagem secundaria*/
+  
+  .img-box-secon p {
+      text-align: left;
+  }
+  /*media query para mobile*/
+  
+  @media screen and (max-width: 822px) {
+      header {
+          justify-content: center;
+          flex-direction: column;
+          position: relative;
+      }
+      .nav-right #menu-center {
+          display: none;
+      }
+      #menu-center.ativado {
+          display: inline;
+      }
+      #menu-center.ativado ul li {
+          display: block;
+      }
+      aside {
+          width: 100%;
+          position: relative;
+          text-align: center;
+          top: 0px;
+          border-style: hidden;
+      }
+      .nav-right #menu-mobile {
+          display: block;
+          position: absolute;
+          top: 100px;
+          left: 150px;
+          width: 30px;
+          height: 1px;
+      }
+      #searchpesq {
+          margin-bottom: 70px;
+      }
+      #redes-sociais a {
+          margin: auto;
+          width: 50%;
+      }
+      #cronology {
+          margin-left: auto;
+          text-align: left;
+      }
+      #postagens {
+          width: 100%;
+      }
+  }
